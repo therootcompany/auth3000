@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/therootcompany/auth3000.git"
+    "url": "git+https://github.com/therootcompany/libauth.git"
   },
   "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/therootcompany/auth3000/issues"
+    "url": "https://github.com/therootcompany/libauth/issues"
   },
-  "homepage": "https://github.com/therootcompany/auth3000#readme",
+  "homepage": "https://github.com/therootcompany/libauth#readme",
   "dependencies": {
     "@types/cookie-parser": "^1.4.2",
     "dotenv": "^10.0.0",
