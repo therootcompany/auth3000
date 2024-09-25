@@ -14,10 +14,18 @@
     "types.js"
   ],
   "scripts": {
+    "bump": "npm version -m \"chore(release): bump to v%s\"",
     "fmt": "npx prettier@2.x -w '**/*.{md,js,html,css}'",
-    "start": "node example/app.js",
     "genenv": "node ./utils/genenv.js",
-    "test": "bash ./test.sh"
+    "lint": "npm run jshint && npm run tsc",
+    "prepublish": "npm run reexport-types",
+    "start": "node example/app.js",
+    "test": "bash ./test.sh",
+    "--------": "-------------------------------------------------",
+    "jshint": "npx -p jshint@2.x -- jshint -c ./.jshintrc ./*.js ./bin/ ./example/ ./lib/ ./middelware/ ./plugins/ ./public/ ./tests/ ./utils/ ./verifier/",
+    "prettier": "npx -p prettier@3.x -- prettier -w '**/*.{js,md}'",
+    "reexport-types": "npx -p jswt@1.x -- reexport",
+    "tsc": "npx -p typescript@5.x -- tsc -p ./jsconfig.json"
   },
   "repository": {
     "type": "git",
