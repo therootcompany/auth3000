@@ -3,3 +3,16 @@
 // DO NOT EDIT
 
 module.exports = require("./lib/libauth.js");
+
+// these typedef reexports will be available to dependent packages
+/**
+ * @typedef {import('./lib/errors.js').AuthError} AuthError
+ * @typedef {import('./lib/magic-flow.js').MagicAssertOpts} MagicAssertOpts
+ * @typedef {import('./lib/magic.js').MagicRouteOpts} MagicRouteOpts
+ * @typedef {import('./lib/oidc.js').OidcPluginOpts} OidcPluginOpts
+ * @typedef {import('./lib/oidc.js').OIDCCache} OIDCCache
+ * @typedef {import('./lib/oidc.js').OidcConfig} OidcConfig
+ * @typedef {import('./lib/session.js').Keypair} Keypair
+ * @typedef {import('./lib/session.js').MyLibAuthOpts} MyLibAuthOpts
+ * @typedef {import('./plugins/magic/store-dummy.js').MemoryStore} MemoryStore
+ */
